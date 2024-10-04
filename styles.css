@@ -3,45 +3,56 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #e3e4db 0%, #e9c009 100%);
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
 
 .calculator {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 320px;
+    background-color: #fefefe;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 350px;
 }
 
 #display {
-    background-color: #e0e0e0;
+    background: linear-gradient(45deg, #e9e8e4, #00d5e0);
+    color: white;
     padding: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: right;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
-    min-height: 60px;
+    min-height: 70px;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 12px;
 }
 
 .btn {
-    padding: 20px;
+    padding: 18px;
     font-size: 1.5em;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #e3e4db 0%, #095fe9 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-    background-color: #eaeaea;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    transform: scale(1.05);
 }
+
+.btn:active {
+    transform: scale(1);
+    background: linear-gradient(135deg, #ee0979, #160f09);
+}
+
